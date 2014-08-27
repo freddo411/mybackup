@@ -3,8 +3,18 @@ mybackup
 
 This is my backup script.
 
+Requirements:
+* rdiff-backup
+ - http://packages.ubuntu.com/search?keywords=rdiff-backup
+ - http://www.nongnu.org/rdiff-backup/
+
+* mkdir
+
 Setup:
-* You'll need to edit the script and set your backup location, and the directories to backup.
+* You'll need to edit the script and set:
+  - your local backup location, 
+  - your "net" backup locaiton,
+  - the list of directories to backup.
 * Add something like this to your crontab: 
 
 ```
@@ -20,5 +30,5 @@ Setup:
 This script was inspired by:
 http://www.mikerubel.org/computers/rsync_snapshots/
 
-This is good read.
+This is a very good read. Gives a highlevel overview to the concepts of backup.
 
